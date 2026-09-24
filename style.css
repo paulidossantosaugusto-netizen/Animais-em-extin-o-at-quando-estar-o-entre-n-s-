@@ -1,0 +1,63 @@
+body{
+    background-color: #377774;
+}
+
+h1{
+    color:white;
+}
+
+.pagina-inicio nav {
+    background-color: #0F2A2E;
+    padding: 15px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-size:18px;
+padding:10px;
+display:block;
+transition:0.3s;
+}
+
+.pagina-inicio .submenu{
+display:none;
+position:absolute;
+background-color:#8b4513;
+padding:0;
+margin:0;
+top:40px;
+border-radius:5px;
+overflow:hidden;
+animation: aparecer 0.3s;
+}
+
+.menu li:hover .submenu{
+display:block;
+}
+
+.submenu li{
+width:150px;
+}
+
+.pagina-inicio .submenu a:hover{
+background-color:#ffeab9;
+}
+
+@keyframes aparecer{
+from{
+opacity:0;
+transform:translateY(-10px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
